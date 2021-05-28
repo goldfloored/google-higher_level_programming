@@ -1,19 +1,26 @@
 #!/usr/bin/python3
 """
-Module say_my_name
-Prints a given first name and last name.
+this module pprint two argement most be string.
+args are two string.
 """
 
-
 def say_my_name(first_name, last_name=""):
-    """Prints a string with <first_name>
-    and <last_name>.
+    """
+    say_m_name - print the first name and last name
+
+    :param first_name: string
+    :param last_name: strin
+
+    raise:
+         TypeError: in case args not strings
+
+    :return:
     """
 
-    if type(first_name) is not str:
+    if first_name is None or not isinstance(first_name, str):
         raise TypeError("first_name must be a string")
 
-    if type(last_name) is not str:
+    if not isinstance(last_name, str):
         raise TypeError("last_name must be a string")
 
     print("My name is {} {}".format(first_name, last_name))
