@@ -1,3 +1,3 @@
 #!/bin/bash
-# Bash script that takes in a URL as an argument, sends a GET request to the URL, and displays the body of the response
-curl -s -d "email=hr@holbertonschool.com&subject=I will always be here for PLD" -X POST "$1"
+# displays all HTTP methods the server will accept.
+curl -sX POST -d "email=hr@holbertonschool.com&subject=I%20will%20always%20be%20here%20for%20PLD" "$1"
